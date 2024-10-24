@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="wedding-title">Wedding Invitation</h1>
+        
+        <!-- Login Form -->
+<div id="login-form" class="login-form">
+    <h2 class="login-title">Login to View the Invitation</h2>
+    
+    <div class="input-group">
+        <input type="text" id="username" placeholder=" " required>
+        <label for="username" class="floating-label">Your Name</label>
+    </div>
+    
+    <div class="partner-selection">
+        <h3 class="partner-title">Choose Your Partner:</h3>
+        <div class="partner-buttons">
+            <button class="partner-button" id="husband-button" data-partner="Husband">Husband</button>
+            <button class="partner-button" id="wife-button" data-partner="Wife">Wife</button>
+        </div>
+    </div>
+
+    <button id="login-button" class="btn-login">Masuk</button>
+</div>
+
+
+
+
+
+        <!-- Menampilkan username dan pasangan -->
+        <p id="invited-username" style="display: none; text-align: center; font-size: 20px; font-weight: bold;"></p>
+<p id="invited-partner" style="display: none; text-align: center; font-size: 20px; font-weight: bold;"></p>
+
+    
+        <!-- Invitation Content -->
+        <div id="invitation-content" class="content" style="display: none;">
+            <div class="invitation-details">
+                <h2><span id="greeting"></span></h2>
+                <p>Assalamualaikum Wr. Wb</p>
+                <p>Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami:</p>
+                
+                <div class="couple-names">
+                    <h3>Adin Hidayat</h3>
+                    <p>&</p>
+                    <h3>[Nama Pasangan]</h3>
+                </div>
+                
+                <div class="wedding-details">
+                    <p>Yang akan dilangsungkan pada:</p>
+                    <p><strong>Hari/Tanggal:</strong> Sabtu, 25 November 2024</p>
+                    <p><strong>Waktu:</strong> Pukul 10:00 WIB - Selesai</p>
+                    <p><strong>Tempat:</strong> Gedung Serba Guna</p>
+                    <p><strong>Alamat:</strong> Jalan Kebahagiaan No. 123, Jakarta Selatan</p>
+                </div>
+
+                <p>Merupakan suatu kehormatan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kami.</p>
+                <p>Wassalamu'alaikum Wr. Wb.</p>
+                
+                <p><strong>Hormat kami,</strong></p>
+                <p>Adin Hidayat & [Nama Pasangan]</p>
+            </div>
+            <!-- Image Gallery -->
+<div class="image-gallery">
+    <h2 class="gallery-title">Our Prewedding Photos</h2>
+    <div class="gallery">
+        <img src="https://i2.wp.com/www.desaintasik.com/wp-content/uploads/2020/01/wedding-kartun.jpg?fit=760%2C760&ssl=1" alt="Prewedding Photo 1" class="gallery-image">
+        <img src="https://img.pikbest.com/png-images/qianku/hand-drawn-cartoon-romantic-wedding_1936170.png!w700wp" alt="Prewedding Photo 2" class="gallery-image">
+        <img src="https://img.lovepik.com/original_origin_pic/18/08/28/ed76914da7f0b9f5c4762be66b43f659.png_wh860.png" alt="Prewedding Photo 3" class="gallery-image">
+        <img src="https://png.pngtree.com/png-vector/20230831/ourmid/pngtree-cute-cartoon-wedding-couple-in-blue-suit-and-dress-png-image_9195085.png" alt="Prewedding Photo 4" class="gallery-image">
+        <img src="https://menikah.co/wp-content/uploads/2024/05/hdggdggss-3.png" alt="Prewedding Photo 5" class="gallery-image">
+        <img src="https://www.tamuspecial.com/wp-content/uploads/2024/04/foto-animasi-pernikahan-baru.jpeg" alt="Prewedding Photo 6" class="gallery-image">
+        </div>
+      </div>
+
+      <!-- Map Location -->
+<div class="map-container">
+    <h2 class="map-title">Location of the Wedding</h2>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d817.1706696833643!2d106.6619633521021!3d-6.682914270181798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1729718443507!5m2!1sid!2sid"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"></iframe>
+</div>
+
+
+
+        <div class="countdown">
+            <h3>Countdown to Our Big Day:</h3>
+            <p id="countdown"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

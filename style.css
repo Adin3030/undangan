@@ -1,0 +1,352 @@
+/* style.css */
+
+body {
+    font-family: 'Times New Roman', serif;
+    background: url('path/to/your/elegant-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #444;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.wedding-title {
+    text-align: center;
+    font-size: 48px;
+    color: #A0522D; /* Warna coklat kemerahan */
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);
+}
+
+/* Gaya untuk tombol pasangan */
+.partner-selection {
+    margin: 20px 0;
+}
+
+.partner-button {
+    background-color: #f1c40f; /* Warna emas */
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.partner-button:hover {
+    background-color: #e67e22; /* Warna oranye saat hover */
+    transform: translateY(-3px); /* Efek mengangkat saat hover */
+}
+
+.partner-button:active {
+    transform: translateY(1px); /* Efek menekan saat diklik */
+}
+
+.login-form {
+    max-width: 400px; /* Atur lebar maksimum form */
+    margin: 0 auto; /* Center form secara horizontal */
+    padding: 30px;
+    border-radius: 15px; /* Bulatkan sudut */
+    background-color: rgba(255, 255, 255, 0.9); /* Latar belakang putih semi-transparan */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+}
+
+.login-form input,
+.login-form select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.login-form input:focus,
+.login-form select:focus {
+    border-color: #A0522D; /* Coklat kemerahan */
+}
+
+/* Animasi saat form dibuka */
+.login-form:hover {
+    transform: translateY(-2px);
+}
+
+/* Gaya untuk pemilihan pasangan */
+.partner-selection {
+    margin: 20px 0;
+}
+
+.partner-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.partner-button {
+    background-color: #f39c12; /* Warna oranye */
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.partner-button:hover {
+    background-color: #e67e22; /* Warna oranye saat hover */
+    transform: translateY(-3px); /* Efek mengangkat saat hover */
+}
+
+.partner-button.selected {
+    background-color: #d35400; /* Warna saat terpilih */
+    transform: scale(1.05); /* Skala sedikit saat terpilih */
+}
+
+/* Tambahkan ke style.css */
+
+/* Gaya untuk judul login */
+.login-title {
+    text-align: center;
+    color: #4A4A4A;
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk input group */
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px 10px;
+    border: 2px solid #ddd;
+    border-radius: 30px; /* Membuat sudut lebih bulat */
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #f39c12; /* Ubah warna border saat fokus */
+    box-shadow: 0 0 5px rgba(243, 156, 18, 0.5); /* Menambahkan bayangan saat fokus */
+}
+
+/* Gaya untuk label */
+.floating-label {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    color: #999;
+    font-size: 16px;
+    transition: 0.2s ease all;
+    pointer-events: none;
+}
+
+.input-group input:focus + .floating-label,
+.input-group input:not(:placeholder-shown) + .floating-label {
+    top: -10px;
+    left: 10px;
+    color: #f39c12; /* Ubah warna label saat fokus */
+    font-size: 12px;
+}
+
+/* Gaya untuk pilihan pasangan */
+.partner-title {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Gaya untuk tombol pilihan pasangan */
+.partner-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Jarak antar tombol */
+}
+
+.partner-button {
+    background-color: #f39c12;
+    color: white;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px; /* Membuat sudut lebih bulat */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 120px; /* Lebar tombol */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.partner-button:hover {
+    background-color: #e67e22; /* Warna lebih gelap saat hover */
+    transform: translateY(-3px); /* Efek mengangkat saat hover */
+}
+
+/* Gaya untuk tombol Masuk */
+.btn-login {
+    background-color: #2ecc71; /* Warna hijau */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px; /* Membuat sudut lebih bulat */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: block;
+    margin: 0 auto; /* Center button */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-login:hover {
+    background-color: #27ae60; /* Warna hijau lebih gelap saat hover */
+    transform: translateY(-3px); /* Efek mengangkat saat hover */
+}
+
+
+.invitation-details {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255, 250, 250, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.5s ease-in-out forwards;
+}
+
+.couple-names h3 {
+    font-size: 36px;
+    color: #A0522D; /* Warna coklat kemerahan */
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.7);
+}
+
+.wedding-details p {
+    font-size: 18px;
+}
+
+.countdown {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #A0522D; /* Warna coklat kemerahan */
+}
+
+/* Gaya untuk Galeri Gambar */
+.image-gallery {
+    text-align: center; /* Pusatkan teks */
+    margin: 40px 0; /* Jarak atas dan bawah */
+}
+
+.gallery-title {
+    font-size: 24px; /* Ukuran font judul galeri */
+    margin-bottom: 20px; /* Jarak bawah judul */
+    color: #6200ea; /* Warna judul */
+}
+
+.gallery {
+    display: flex; /* Gunakan flexbox untuk tata letak */
+    flex-wrap: wrap; /* Biarkan gambar membungkus ke baris baru */
+    justify-content: center; /* Pusatkan gambar */
+}
+
+.gallery-image {
+    width: 150px; /* Lebar gambar */
+    height: auto; /* Tinggi otomatis */
+    margin: 10px; /* Jarak antar gambar */
+    border-radius: 8px; /* Sudut membulat */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animasi efek */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan */
+}
+
+/* Efek hover untuk gambar */
+.gallery-image:hover {
+    transform: scale(1.1); /* Perbesar gambar saat hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Tambah bayangan saat hover */
+}
+
+
+/* style.css - Tambahan animasi */
+.fadeIn {
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Gaya untuk Peta */
+.map-container {
+    text-align: center; /* Pusatkan teks */
+    margin: 40px 0; /* Jarak atas dan bawah */
+}
+
+.map-title {
+    font-size: 24px; /* Ukuran font judul peta */
+    margin-bottom: 20px; /* Jarak bawah judul */
+    color: #6200ea; /* Warna judul */
+}
+
+iframe {
+    border-radius: 8px; /* Sudut membulat untuk iframe */
+}
+
+
+/* Animasi untuk dropdown */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+select {
+    animation: none;
+}
+
+select.bounce {
+    animation: bounce 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
